@@ -16,7 +16,7 @@ inch,2.54,centimeter
 
 Your code will use this information to convert a value from one unit to another.
 
-The conversion equation for all of these lines is `from_unit` x `conversion_factor` = `to_unit`.
+The conversion equation for all of these lines is `value in from_unit` x `conversion_factor` = `converted value in to_unit`.
 
 Your code should be able to convert the following test cases:
 
