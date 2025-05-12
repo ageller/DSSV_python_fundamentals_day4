@@ -104,7 +104,7 @@ test_value = 8.4
 final_unit = m/Sec
 ```
 
-2. Someone might give a test of final unit that has spaces instead of the underscores that are in your data csv file.  Edit your code so that it can still process this sample:
+2. Someone might give a unit that has spaces instead of the underscores that are in your data csv file.  Edit your code so that it can still process this sample:
 
 ```
 from_unit = "cubic foot"
@@ -112,7 +112,7 @@ test_value = 30
 to_unit = "liter"
 ```
 
-3.	In the csv file, not all the units are included on both sides of the conversion factor. Someone might give you a test unit from the right side of the factor and ask you to convert it to the unit on the left side, which would require division instead of multiplication. Edit your code so that it can process this sample:
+3.	In the csv file, not all the units are included on both sides of the conversion factor. Someone might give you a unit from the right side of the factor and ask you to convert it to the unit on the left side, which would require division instead of multiplication. Edit your code so that it can process this sample:
 
 ```
 test_unit = "ergs"
@@ -120,4 +120,4 @@ test_value = 8.4
 final_unit = "joule"
 ```
 
-4.	Advanced Challenge: there’s a function called `input()` that can collect data from the user of your code in real time. Here’s a link to a website that works through the `input()` function: https://www.w3schools.com/python/ref_func_input.asp. Try to use the `input()` function to collect the `from_unit`, `test_value`, and `to_unit` values.
+4.	Advanced Challenge: there's a function called `input()` that can collect data from the user of your code in real time. Here's a link to a website that describes the `input()` function: https://www.w3schools.com/python/ref_func_input.asp. Try to use the `input()` function to collect the `from_unit`, `test_value`, and `to_unit` values.
