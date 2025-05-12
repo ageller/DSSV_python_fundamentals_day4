@@ -30,7 +30,7 @@ test_value = 30
 to_unit = "liter"
 
 from_unit = "slug"
-test_value = "4.8"	# Yes, you should write your code to handle values that are entered as strings
+test_value = "4.8" # Yes, you should write your code to handle values that are entered as strings
 to_unit = "pound"
 
 from_unit = "slug"
@@ -67,7 +67,7 @@ If you work in a Jupyter notebook (running on your computer), you can download t
 
 Here are errors two that you should anticipate and check for.
 
-1.	Someone might give the initial value as a string instead of a float/integer.
+1.	Someone might give the initial value as a string instead of a float or integer.
 3.	Someone might request a final unit that is not in your data – your code should print out an error message. Here’s a sample to test for this error:
 
 ```
