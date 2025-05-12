@@ -65,7 +65,7 @@ If you work in a Jupyter notebook (running on your computer), you can download t
 
 ## Errors to anticipate
 
-Here are errors two that you should anticipate and check for.
+Here are two errors that you should anticipate and check for.
 
 1.	Someone might give the initial value as a string instead of a float or integer.
 3.	Someone might request a final unit that is not in your data – your code should print out an error message. Here’s a sample to test for this error:
