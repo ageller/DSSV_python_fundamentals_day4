@@ -16,7 +16,10 @@ inch,2.54,centimeter
 
 Your code will use this information to convert a value from one unit to another.
 
-The conversion equation for all of these lines is `value in from_unit` x `conversion_factor` = `converted value in to_unit`.
+The conversion equation for all of these lines is
+```
+from_unit x conversion_factor = to_unit
+```
 
 Your code should be able to convert the following test cases:
 
@@ -40,8 +43,8 @@ to_unit = "snail" # See 'Errors to anticipate' below
 
 By the end of day, your code should:
 
-- Read and store the conversion data from the csv file in some object (list of lists, dictionary of dictionaries, etc.)
-- Provide a way to find the correct conversion factor from your data object
+- Read the conversion data from the `conversionMeasures.csv` file and store it as a data structure in a python object (list of lists, dictionary of dictionaries, etc.)
+- Find the correct conversion factor for a given unit from your python object containing the data
 - Include a function to convert between units
 - Print out a full sentence response with the final answer
 - Anticipate some errors (more on this below)
@@ -59,6 +62,8 @@ If you are using a Colab notebook, you will need to run a cell at the top of you
 !wget https://raw.githubusercontent.com/nuitrcs/pythonBootcamp_4Day/main/conversionMeasures.csv
 ```
 
+This line loads the data stored in our GitHub repo into your Google Colab workspace.
+
 If you work in a Jupyter notebook (running on your computer), you can download the file from this GitHub repo then point your code to the file location on your computer.
 
 
@@ -68,7 +73,7 @@ If you work in a Jupyter notebook (running on your computer), you can download t
 Here are two errors that you should anticipate and check for.
 
 1.	Someone might give the initial value as a string instead of a float or integer.
-3.	Someone might request a unit that is not in your data – your code should print out an error message. Here’s a sample to test for this error.  (Unit "snail" does not exist.):
+2.	Someone might request a unit that is not in your data – your code should print out an error message. Here’s a sample to test for this error.  (Unit "snail" does not exist.):
 
 ```
 test_unit = "slug"
@@ -85,12 +90,12 @@ final_unit = "snail"
 
 ## Python notebook and script organization
 
-Code should be organized in the following order:
+While you can get the above done in a chaotic manner, we want you to try some best practices when creating python notebooks. Following best practices, endeavor to organize your notebook in the following order:
 
-1. A description of what the notebook or script does, what type of data you must or can use (file type, required columns, etc.), and what products (files, visualizations, reports, etc.) are made.
+1. A description of what the notebook or script does, what type of data you must or can use (file type, required columns, etc.), and what products (files, visualizations, reports, etc.) are made. (While this appears first in a finalized notebook, it is usually prepared or finalized last, once you have a better idea of how other sections fit together).
 2. Import any packages used
 3. Define any input or output filenames, saving the file paths as variables
-4. Any data structures that will be used in the code (dictionaries, lists, etc.)
+4. Loading of data, cleaning of data, and creation of data structures that will be used throughout the code (dictionaries, lists, etc.)
 5. Define any custom functions or objects that will be used in the body of the code
 6. Body of the code (calling functions, looping, cleaning data, doing calculations, etc.)
 
